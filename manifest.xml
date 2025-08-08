@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <!-- Quelle: GitHub -->
   <remote name="github" fetch="https://github.com/" />
+  <remote name="lineage" fetch="https://github.com/LineageOS/" />
+  <remote name="aosp" fetch="https://android.googlesource.com/" />
+
+  <!-- Standard -->
+  <default revision="lineage-23.0" remote="lineage" sync-j="4" />
+
+  <!-- LineageOS Basis -->
+  <project name="LineageOS/android" path="." remote="lineage" revision="lineage-23.0" />
+
+  <!-- Pixel 8 Device Tree -->
   <project name="molli1312/android_device_google_shiba_avf" path="device/google/shiba" remote="github" revision="main" />
+
+  <!-- Pixel 8 Kernel -->
   <project name="molli1312/android_kernel_google_gs201_avf" path="kernel/google/gs201" remote="github" revision="main" />
+
+  <!-- Vendor Blobs -->
+  <project name="TheMuppets/proprietary_vendor_google" path="vendor/google" remote="github" revision="lineage-23.0" />
+  <project name="LineageOS/android_vendor_lineage" path="vendor/lineage" remote="lineage" revision="lineage-23.0" />
 </manifest>
