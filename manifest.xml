@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="github" fetch="https://github.com/" />
+  <project name="molli1312/android_device_google_shiba_avf" path="device/google/shiba" remote="github" revision="main" />
+  <project name="molli1312/android_kernel_google_gs201_avf" path="kernel/google/gs201" remote="github" revision="main" />
+</manifest>
